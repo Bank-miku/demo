@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>アンケート？</title>
+  </head>
+  <body>
+    <form method="GET" action="../php/formCheck.php">
+      投稿日：
+      <input type="date" name="dateSelect"><br>
+      投稿時間：
+      <input type="time" name="timeSelect"><br>
+      氏名：
+      <input type="text" name="namae" placeholder="氏名を入力してください。"><br>
+      eMail：
+      <input type="text" name="eMail" placeholder="メールアドレスを入力してください。"><br>
+      性別：
+      <label><input type="radio" name="gender" value="女">女</label>
+      <label><input type="radio" name="gender" value="男">男</label><br>
+      趣味：
+      <label><input type="checkbox" name="hobby[]" value="パソコン">パソコン</label>
+      <label><input type="checkbox" name="hobby[]" value="読書">読書</label>
+      <label><input type="checkbox" name="hobby[]" value="旅行">旅行</label>
+      <label><input type="checkbox" name="hobby[]" value="釣り">釣り</label>
+      <label><input type="checkbox" name="hobby[]" value="寝る">寝る</label><br>
+      出身地：
+      <select name="birthplace">
+        <option value="">出身地を選んでください。</option>
+        <option value="大阪府">大阪府</option>
+        <option value="兵庫県">兵庫県</option>
+        <option value="中国">中国</option>
+        <option value="ベトナム">ベトナム</option>
+        <option value="インド">インド</option>
+        <option value="ミャンマー">ミャンマー</option>
+        <option value="その他">その他</option>
+      </select><br>
+      好きな地域（複数選択可）：
+      <select name="favoriteArea[]" size="5" multiple>
+        <option value="北海道">北海道</option>
+        <option value="大阪府">大阪府</option>
+        <option value="兵庫県">兵庫県</option>
+        <option value="中国">中国</option>
+        <option value="ベトナム">ベトナム</option>
+        <option value="インド">インド</option>
+        <option value="ミャンマー">ミャンマー</option>
+      </select><br>
+      問合せ：
+      <textarea name="inquiry" rows="10" cols="50" wrap="hard" placeholder="※お知りになりたいことお問い合わせください。"></textarea><br>
+      どこが好きですか？：
+      <label><input type="radio" name="like" value="山">山</label>
+      <label><input type="radio" name="like" value="海">海</label>
+      <label><input type="radio" name="like" value="川">川</label>
+      <label><input type="radio" name="like" value="町">町</label><br>
+      あなたはペットを飼っていますか？：
+      <label><input type="radio" name="pet" value="はい">はい</label>
+      <label><input type="radio" name="pet" value="いいえ">いいえ</label><br>
+      <input type="submit" value="確認">
+    </form>
+  </body>
+</html>
